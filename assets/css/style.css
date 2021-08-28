@@ -10,10 +10,169 @@
     object-fit: cover;
     scroll-behavior: smooth;
     font-family: 'Rubik', sans-serif;
+    transition: all .3s;
 }
 ul{
     list-style: none;
 }
+img{
+    width: 100%;
+    object-fit: cover;
+}
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
+}
+.fix::before, .fix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ======================Header Area Start Here=============== */
+.header-area{
+    background-color: #2980b9;
+    position: static;
+}
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+.brand{
+    width: 20%;
+    float: left;
+}
+.brand img {
+    width: 75%;
+    height: 150px;
+    display: block;
+    margin-right: 30px;
+}
+.main-menu{
+    width: 80%;
+    margin: 0 auto;
+}
+.main-menu ul {
+    text-align: right;
+    padding: 50px 20px;
+}
+.main-menu ul li {
+    display: inline-block;
+}
+.main-menu ul li a {
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    display: block;
+    transition: .3s;
+}
+.main-menu ul li a:hover{
+    background-color: coral;
+}
+
+/* ======================Header Area End Here=============== */
+/* ======================Banner Area Start Here=============== */
+.banner img {
+    height: 100vh;
+    margin-bottom: 50px;
+}
+.products-area{
+    width: 108%;
+}
+.products h1, .about-us h1 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    margin: 50px 0;
+}
+.single-product {
+    width: 30%;
+    float: left;
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    box-shadow: 2px 3px 5px 0px rgba(64,55,55,0.81);
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(64,55,55,0.81);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(64,55,55,0.81);
+}
+.single-product:last-child{
+    margin-right: 0;
+}
+.single-product h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #2b2424;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.single-product p {
+    text-align: justify;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.btn-more {
+    color: #fff;
+    background-color: #ff2277;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    display: inline-block;
+}
+.btn-more:hover{
+    background-color: #d4066d;
+}
+/* ======================Banner Area End Here=============== */
+/* ======================About Us Area Start Here=============== */
+.about-us{
+    padding: 50px 0;
+}
+.left-sidebar{
+    width: 70%;
+    float: left;
+}
+.right-sidebar {
+    width: 27%;
+    float: right;
+    margin-left: 30px;
+    padding: 10px 20px;
+}
+.content p {
+    font-size: 22px;
+    text-align: justify;
+    line-height: 30px;
+    padding: 10px;
+    color: #4c4747;
+}
+.sidebar-menu ul li a {
+    font-size: 25px;
+    color: cadetblue;
+    text-align: left;
+    font-weight: 600;
+    display: block;
+    padding: 10px 25px;
+}
+.sidebar-menu ul li a:hover{
+    color:teal;
+    text-decoration: underline;
+}
+
+/* ======================About Us Area End Here=============== */
+
+.footer-area{
+    background-color: #2980b9;
+    padding: 50px;
+}
+.footer-area p{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
 }
